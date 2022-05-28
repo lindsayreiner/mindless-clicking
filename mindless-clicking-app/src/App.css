@@ -43,9 +43,11 @@
   background-color: turquoise;
   font-weight: bold;
   padding: 1em;
+  margin: 1em;
 }
 
 button {
   background-color: turquoise;
   padding: 1em;
+  margin: 1em;
 }

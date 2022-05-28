@@ -10,9 +10,12 @@ export default function Home() {
     return (
         <>
             <Header />
-            <h1>Welcome to the Geek Joke Application</h1>
-            <button><Link to="/joke" className="jokeBtn">Get a geek joke</Link></button>
-            <Footer />
+            <h1>Pick an app.</h1>
+            <div className="appWrapper" style={{ display: 'flex' }}>
+                <button><Link to="/joke" className="jokeBtn">Get a Geek Joke</Link></button>
+                <button><Link to="/math-game" className="jokeBtn">Play the Math Game</Link></button>
+                <Footer />
+            </div>
         </>
     )
 }
