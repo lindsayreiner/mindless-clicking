@@ -12,8 +12,8 @@ export default function Home() {
             <Header />
             <h1>Pick an app.</h1>
             <div className="appWrapper" style={{ display: 'flex' }}>
-                <button><Link to="/joke" className="btn">Get a Geek Joke</Link></button>
-                <button><Link to="/math-game" className="btn">Play the Math Game</Link></button>
+                <button style={{ backgroundColor: '#BEEA5E' }}><Link to="/joke" className="btn" style={{ backgroundColor: '#BEEA5E' }}>Get a Geek Joke</Link></button>
+                <button style={{ backgroundColor: '#900C3F' }}><Link to="/math-game" className="btn" style={{ backgroundColor: '#900C3F' }}>Play the Math Game</Link></button>
                 <Footer />
             </div>
         </>
