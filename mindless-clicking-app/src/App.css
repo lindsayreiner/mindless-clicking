@@ -37,7 +37,7 @@
   }
 }
 
-.jokeBtn {
+.btn {
   text-decoration: none;
   color: white;
   background-color: turquoise;
@@ -48,6 +48,7 @@
 
 button {
   background-color: turquoise;
+  color: white;
   padding: 1em;
   margin: 1em;
 }

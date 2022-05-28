@@ -24,7 +24,7 @@ export default function GeekJoke() {
     return (
         <>
             <h1 style={{ margin: '2rem' }}>{joke}</h1>
-            <button><Link to="/joke" onClick={fetchJoke} className="jokeBtn">Get another geek joke</Link></button>
+            <button><Link to="/joke" onClick={fetchJoke} className="btn">Get another geek joke</Link></button>
         </>
     )
 }
