@@ -1,3 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
 .App {
   text-align: center;
 }
@@ -55,70 +65,11 @@ button {
   margin: 1em;
 }
 
-.mathGameWrapper {
-  background-color: rgb(146, 115, 146);
-  padding: 2rem;
-}
 
-.mathGameHeader {
-  padding: 1rem;
-}
 
-.randomNumber {
-  background-color: rgb(202, 198, 198);
-  color: black;
-  padding: 1rem 3rem;
-  margin: 1rem;
-  max-width: 10rem;
-  font-size: 25px;
-  border: 2px solid black;
-  border-radius: 8px;
-}
+/* Sticky footer */
 
-.problemWrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.sign {
-  margin-top: 2rem;
-  /* margin: 1rem; */
-}
-
-.answerInput {
-  padding: 1rem 3rem;
-  margin: 1rem;
-  max-width: 10rem;
-  text-align: center;
-  font-size: 25px;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-
-.score {
-  padding: 1rem 3rem;
-  margin: 1rem;
-  max-width: 10rem;
-  text-align: center;
-  font-size: 30px;
-  background-color: rgb(202, 198, 198);
-  color: black;
-  align-self: center;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-
-.timer {
-  padding: 1rem 3rem;
-  max-width: 12rem;
-  background-color: rgb(202, 198, 198);
-  color: black;
-  float: right;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-
-.scoreTimerWrapper {
-  display: flex;
-  justify-content: space-between;
+body > footer {
+  position: sticky;
+  top: 100vh;
 }

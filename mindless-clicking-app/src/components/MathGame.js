@@ -1,15 +1,18 @@
 import { useState } from 'react'
 
 import Timer from './Timer';
+import '../styles/MathGame.css';
 
 export default function MathGame() {
     const [score, setScore] = useState(0);
     const [rn1, setRn1] = useState();
     const [rn2, setRn2] = useState();
     const [sign, setSign] = useState();
+    const [answer, setAnswer] = useState();
+    const [correctAnswer, setCorrectAnswer] = useState();
 
-    // const rn1 = Math.round(Math.random());
-    // const rn2 = Math.round(Math.random());
+    setRn1 = getRandomInt();
+    setRn2 = getRandomInt();
 
     const getRandomInt = () => {
         const minNum = 1;
@@ -42,17 +45,14 @@ export default function MathGame() {
                     <p className="score">Score: {score}</p>
                     <Timer />
                 </div>
-                <p>Calculate:</p>
+                <p className="calculate">Calculate:</p>
                 <div className="problemWrapper">
                     <div className="randomNumber">{getRandomInt()}</div>
                     <div className="sign">{getRandomSign()}</div>
                     <div className="randomNumber">{getRandomInt()}</div>
                     <span className="sign">=</span>
+                    <input type="number" className="answerInput" onSubmit={checkAnswer} />
                 </div>
-                <input type="number" className="answerInput" onSubmit={checkAnswer} />
-
-
-
 
             </section>
         </>

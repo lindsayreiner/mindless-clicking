@@ -51,10 +51,15 @@ export default function Timer() {
         clearTimer(getDeadTime());
     }, []);
 
+    // const onClickReset = () => {
+    //     clearTimer(getDeadTime());
+    // }
+
 
     return (
         <div>
             <p className="timer">Time Remaining: {timer}</p>
+            {/* <button onClick={onClickReset}>Reset</button> */}
         </div>
     )
 }
